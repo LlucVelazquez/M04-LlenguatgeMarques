@@ -3,74 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <title>Espècies en perill d'extinció</title>
+    <link rel="stylesheet" href="index.css"/>
+    <script src="index.js" type="module"></script>
 </head>
 <body>
-    <nav>
-        <h1>EPEPC</h1>
-        <ul>
-            <li><a href="index.html#Inici">Inici</a></li>
-            <li><a href="list.html#Llista">Llistat</a></li>
-            <li><a href="contact.html#Contacte">Contacta</a></li>
+    <nav id="Menu" class="Menu">
+        <h1 id="EPEPC">EPEPC</h1>
+        <ul class="punto"id="llista">
+            <li><a class="link" href="index.html#Inici">Inici</a></li>
+            <li><a class="link" href="list.html#Llista">Llistat</a></li>
+            <li><a class="link" href="contact.html#Contacte">Contacta</a></li>
         </ul>
     </nav>
     <section id="Inici">
-        <h2>Espècies en perill d'extincio als Paisos Catalans</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Donec luctus ante eget dui placerat, eu lobortis arcu finibus.
-            Cras tincidunt euismod turpis, eget finibus nunc cursus eu.</p>
+        <div class="MuchoTexto">
+            <h2>Espècies en perill d'extincio als Paisos Catalans</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Donec luctus ante eget dui placerat, eu lobortis arcu finibus.
+                Cras tincidunt euismod turpis, eget finibus nunc cursus eu.</p>
 
-        <p>Nam laoreet, magna vitae imperdiet pharetra, magna ipsum pretium est,
-            vel interdum tellus eros accumsan urna. Nullam rutrum convallis lorem
-            id feugiat. Donec sit amet augue sapien. Quisque laoreet tincidunt dui,
-            sed semper nisi pulvinar ac. Aliquam volutpat pretium sodales. Phasellus
-            vulputate ligula vitae egestas blandit. </p>
-        <p>Pellentesque non vulputate nisi,
-            tincidunt tristique purus. Curabitur neque massa, dignissim in odio non,
-            vestibulum luctus justo. Praesent ac mauris fringilla, scelerisque lorem tempus,
-            fermentum lorem. Sed eu eleifend arcu. Maecenas eget convallis mi.
-            Sed a accumsan tellus. Vestibulum vehicula rutrum fermentum.
-            Proin vel convallis leo, eu mattis nisl.</p>
-        <h2>TOP 3</h2>
-        <ol>
-            <li><a href="caretta_caretta.html">tortuga Babaua - Caretta caretta<br>
-                <img src="Imatges/Loggerhead_turtle.jpg" alt="caretta"><br>
-                <p>Estat de conservacio</p>
-                <p>Vulnerable</p>
-                <p>Població</p>
-                <p>Decreixnet</p>
-            </a>
-            </li>
-            <li><a href="caretta_caretta.html">Lludria - Lutra lutra<br>
-                <img src="Imatges/lutra_lutra.jpg" alt="lutra"><br>
-                <p>Estat de conservacio</p>
-                <p>Gairabe amenaçada</p>
-                <p>Població</p>
-                <p>Decreixent</p>
-            </a></li>
-            <li><a href="caretta_caretta.html">Ratpenat de ferradura mitjà - Rhinolophus mehelyi<br>
-                <img src="Imatges/rhinolophus_mehelyi.jpg" alt="ratpenat"><br>
-                <p>Estat de conservació</p>
-                <p>Vulnerable</p>
-                <p>Població</p>
-                <p>Decreixnet</p>
-            </a></li>
-        </ol>
-        <h2>Bibliografia</h2>
-        <ul>
-            <li><a href="https://ca.wikipedia.org/wiki/Tortuga_careta">Wikipedia</a></li>
-            <li>IUCN Red List</li>
-        </ul>
+            <p>Nam laoreet, magna vitae imperdiet pharetra, magna ipsum pretium est,
+                vel interdum tellus eros accumsan urna. Nullam rutrum convallis lorem
+                id feugiat. Donec sit amet augue sapien. Quisque laoreet tincidunt dui,
+                sed semper nisi pulvinar ac. Aliquam volutpat pretium sodales. Phasellus
+                vulputate ligula vitae egestas blandit. </p>
+            <p>Pellentesque non vulputate nisi,
+                tincidunt tristique purus. Curabitur neque massa, dignissim in odio non,
+                vestibulum luctus justo. Praesent ac mauris fringilla, scelerisque lorem tempus,
+                fermentum lorem. Sed eu eleifend arcu. Maecenas eget convallis mi.
+                Sed a accumsan tellus. Vestibulum vehicula rutrum fermentum.
+                Proin vel convallis leo, eu mattis nisl.</p>
+        </div>
+        <div id="prova">
+            <h2 id="top">TOP 3</h2>
+            <ol class="punto"id="cosas">
+                <li class="animal"><a class="link" href="caretta_caretta.html">tortuga Babaua - Caretta caretta<br>
+                    <img src="Imatges/Loggerhead_turtle.jpg" alt="caretta" height="250px"><br>
+                    <div class="container">
+                        <p class="Estat">Estat de conservacio</p>
+                        <p class="Vulnerable">Vulnerable</p>
+                        <p class="Poblacio">Població</p>
+                        <p class="Decreixnet">Decreixnet</p>
+                    </div>
+                </a>
+                </li>
+                <li class="animal"><a class="link" href="caretta_caretta.html">Lludria - Lutra lutra<br>
+                    <img src="Imatges/lutra_lutra.jpg" alt="lutra" height="250px"><br>
+                    <div class="container">
+                        <p class="Estat">Estat de conservacio</p>
+                        <p class="Vulnerable">Gairabe amenaçada</p>
+                        <p class="Poblacio">Població</p>
+                        <p class="Decreixnet">Decreixent</p>
+                    </div>
+                </a></li>
+                <li class="animal"><a class="link" href="caretta_caretta.html">Ratpenat de ferradura mitjà - Rhinolophus mehelyi<br>
+                    <img src="Imatges/rhinolophus_mehelyi.jpg" alt="ratpenat" height="200px"><br>
+                        <div class="container">
+                        <p class="Estat">Estat de conservació</p>
+                        <p class="Vulnerable">Vulnerable</p>
+                        <p class="Poblacio">Població</p>
+                        <p class="Decreixnet">Decreixnet</p>
+                    </div>
+                </a></li>
+            </ol>
+        </div>
+        <div>
+            <p>
+                Lorem ipsum odor amet, consectetuer adipiscing elit. Per dis iaculis montes, ornare fringilla aptent amet aptent. Vivamus vel id venenatis tortor congue ullamcorper dictumst. Egestas ultricies urna et semper semper. Primis morbi curae magnis iaculis et morbi. Natoque diam mattis tortor ridiculus augue auctor diam. Dapibus platea efficitur sapien habitant turpis natoque consequat scelerisque.
+
+                Faucibus ad quis diam condimentum condimentum bibendum enim. Rhoncus primis phasellus a netus dui habitasse maecenas. Dignissim cursus morbi sagittis velit felis montes. Gravida varius quam class sit laoreet neque. Cursus sem nascetur risus sagittis risus placerat suspendisse ullamcorper fringilla. Ante dui maximus vitae dignissim rutrum et quis iaculis. Per natoque justo tristique fermentum vehicula duis pulvinar lacinia risus. Integer lorem arcu aenean etiam nullam lacinia.
+
+                Elementum lacus tincidunt tristique nascetur, condimentum duis faucibus in volutpat. Integer hendrerit ac pulvinar primis magna lobortis. Molestie felis dolor litora; enim adipiscing malesuada adipiscing id. Nisl sapien ligula nostra orci finibus bibendum ut. Rutrum felis donec risus quam praesent est. Pellentesque dapibus duis a id eleifend suspendisse. Sem iaculis ornare dictum, curae sed ac tortor? Nam vel adipiscing parturient egestas; arcu morbi. Aptent sed laoreet elit; ac varius lacus. Nisl gravida arcu parturient maecenas posuere metus montes interdum.
+
+                Aliquet scelerisque quam penatibus aenean nam consectetur. Id facilisis iaculis auctor egestas tellus blandit torquent. Ac finibus torquent amet finibus natoque elementum non; dapibus mus. Per massa ad suscipit ut vehicula sollicitudin. Elit quisque dolor vehicula dictum a taciti habitant. Ornare vestibulum condimentum cursus mauris augue finibus blandit vulputate sed. Pulvinar morbi platea nisi, tellus ex sapien netus massa. Urna potenti potenti; semper euismod faucibus hendrerit enim velit.
+
+                Rhoncus enim dui torquent commodo efficitur semper. Porta ante quis dapibus felis volutpat. Venenatis at ridiculus; natoque vitae dapibus porta orci nam. Risus sapien sem convallis tellus massa. Auctor sem ex aliquam; sit elit quis leo. Enim sollicitudin maximus suscipit proin aenean efficitur. Lacus vivamus tempus platea eleifend nulla maecenas rhoncus id. Velit luctus sapien enim vulputate, habitant donec.
+
+                Quam habitant facilisi curae commodo facilisis amet sodales facilisi laoreet. Mi amet aenean imperdiet purus elit suspendisse in etiam sapien. Eu cubilia hac viverra; himenaeos duis habitasse tellus torquent. Placerat praesent leo vel nulla sit, eget ipsum proin. Gravida dui ornare iaculis quis interdum proin dis? Nostra consectetur nascetur tempor magnis pulvinar maecenas etiam inceptos. Turpis justo finibus praesent mattis conubia habitant vitae pharetra. Purus metus massa montes vehicula justo malesuada.
+
+                Mattis consectetur lacinia mi tellus felis, pulvinar fames. Arcu duis mattis aenean molestie mauris. Consequat turpis amet felis scelerisque neque morbi metus penatibus. Sed hac sociosqu velit eget porttitor, aptent per dui. Nisl mus sit luctus ornare ut fringilla. Mi a sed fermentum rutrum libero fermentum class nec mattis. Pharetra eu quam vulputate eget consequat mattis habitant urna porttitor. Sem penatibus laoreet tempor hac faucibus venenatis.
+
+                Vehicula sagittis adipiscing elit; augue ornare eros. Gravida erat placerat proin ut efficitur consectetur id ad posuere. Malesuada potenti hac tellus sem ad. Sapien lacinia nullam maximus arcu phasellus montes amet. Fringilla justo congue interdum taciti justo proin cubilia. Enim leo tempor primis aptent finibus vitae.
+
+                Purus per fames primis imperdiet nascetur semper. Malesuada litora maecenas platea ornare commodo finibus. Montes quisque ex suspendisse est blandit diam rhoncus maximus. Vulputate a purus; pharetra maecenas nunc magnis justo blandit fusce. Per blandit vulputate vehicula tellus mus. Fringilla justo tellus eros arcu; ultrices class eros dui? Lacus non arcu sodales ridiculus praesent rutrum sagittis elit. Magna habitant maximus rhoncus cras orci nunc augue commodo eget.
+
+                Netus amet nulla viverra lacus at ipsum. Eros conubia metus eleifend rutrum; senectus suscipit pharetra. Rhoncus ante mattis vulputate quam augue vitae tristique. Inceptos iaculis pretium natoque inceptos aliquam est tempus lobortis. Class consequat velit; quis at etiam mollis duis ipsum. Pulvinar primis curae commodo mi vitae magna justo orci himenaeos. Nascetur sed platea porttitor vivamus felis dui lacinia faucibus. Malesuada nostra rhoncus commodo tincidunt nullam, tempor fermentum nibh. Quis sit et ut elementum facilisis.
+
+                Nunc metus massa dapibus consectetur vestibulum ad pharetra orci at. Litora turpis neque est nascetur morbi. Imperdiet nullam scelerisque pretium blandit conubia eros posuere. Erat a tristique luctus viverra primis ligula risus. Adipiscing ultrices tristique elementum amet quisque dui. Ut consectetur eget magnis facilisi litora rhoncus sapien aptent. Montes sapien integer ultrices suspendisse fusce dictum tortor quis diam. Morbi dolor facilisi leo; pharetra fusce ex.
+
+                Penatibus taciti odio; velit sed ac potenti hac cursus. Varius primis sociosqu scelerisque felis odio phasellus nullam ultrices risus. Malesuada montes quis potenti urna lobortis fusce. Maximus suscipit pretium ornare ullamcorper luctus facilisi; orci nisl. Purus fringilla ipsum magna eu imperdiet porttitor ultricies etiam. Interdum viverra feugiat eget sit congue amet quam penatibus. Quisque nostra nisl magna mi dolor.
+
+                Vivamus facilisi nulla cras cubilia rutrum nam hac condimentum. Fringilla egestas sed consectetur ultrices eros gravida suspendisse. Nascetur integer augue elit natoque nisl vel aliquet? Integer hac turpis dictum senectus praesent. Arcu mi ultrices pellentesque volutpat, eleifend efficitur placerat. Vestibulum egestas primis class id dignissim ultrices dolor facilisis. Mi ultricies dignissim mi nullam leo eget. Elit turpis duis ac condimentum vitae mi. Bibendum egestas platea hendrerit ac; tempus sapien luctus?
+
+                Dapibus interdum velit adipiscing; egestas vestibulum porttitor bibendum odio. Sit phasellus fusce fames vestibulum dictum posuere conubia ante. Nulla condimentum curae bibendum tortor sagittis porta lacinia phasellus. Dictumst massa mauris fringilla urna penatibus pellentesque natoque. Tristique efficitur ridiculus auctor quam ornare hendrerit. Augue habitant pharetra sagittis dignissim vestibulum cursus penatibus habitasse risus. Torquent aptent quis curabitur nec; donec inceptos enim quam sagittis.
+
+                Maximus aliquam ut leo consequat; elit vel primis turpis sagittis. Ridiculus tempor euismod blandit; nec proin vel felis at. Tincidunt gravida ante et volutpat facilisis nulla. Dui hac porttitor in blandit lacinia mollis nullam eros. Praesent ipsum aptent metus, laoreet natoque eros ullamcorper dictum. Litora sodales mauris dictumst bibendum enim magnis integer tellus. Senectus eleifend semper amet vehicula vel faucibus malesuada sed enim.
+
+                Commodo elementum taciti in tristique habitant. Adipiscing ligula nascetur interdum mauris, luctus curabitur semper varius cras. Blandit nec blandit sollicitudin ultrices facilisis ullamcorper non duis. Elementum aliquam imperdiet mi justo netus aptent sagittis. Id libero scelerisque porta maximus nam nostra curae rutrum. Faucibus himenaeos ad, non adipiscing platea in. Pharetra molestie venenatis praesent aliquam est lobortis.
+
+                Imperdiet suscipit et maximus litora morbi magnis a. Nisi penatibus nascetur massa ornare augue pharetra. Rhoncus lobortis sagittis leo ac lobortis sollicitudin. Himenaeos viverra donec sollicitudin dolor; eros lorem id luctus. Maecenas commodo aptent ornare dui mus. Quisque id fusce quam nostra feugiat iaculis mus et conubia? Metus enim quisque porttitor tortor curabitur nascetur suspendisse. Cras vitae cursus magna mus in. Suspendisse consequat pretium ornare natoque elementum mattis ligula sit. Euismod lobortis magna non lobortis molestie sed felis.
+
+                Magnis phasellus auctor nec semper bibendum. Pellentesque interdum dapibus per primis dapibus dis diam. Vehicula proin conubia parturient platea potenti. Potenti est tristique magnis aliquam, dis senectus imperdiet. Proin dapibus torquent habitasse tristique potenti. Litora dolor purus suscipit class hendrerit aliquet magnis fermentum.
+
+                Pellentesque amet proin gravida venenatis tortor ornare class. Lorem blandit eros fames, eget sodales nullam lorem. Primis augue eleifend ridiculus eu sociosqu massa, sem suspendisse tortor. Cursus mi sem auctor donec consequat interdum porttitor praesent dignissim. Ullamcorper pharetra sodales nunc, cras duis at fames. Aliquam sapien maecenas dapibus a aenean natoque. Mauris proin tempus nunc condimentum luctus nec. Commodo duis aptent aenean maecenas aliquam risus taciti phasellus! Diam lobortis mauris ornare tellus magna quis cursus dignissim.
+
+                Nullam malesuada fusce feugiat tellus a fermentum, ridiculus semper. Vehicula arcu nec integer ultricies dui semper. Phasellus fringilla cras eros est primis. Sit vivamus sagittis semper tristique facilisis fames, sapien mauris ex. Tincidunt vivamus rutrum tincidunt ligula suscipit. Morbi lobortis molestie penatibus sociosqu porta netus.
+
+                Aenean nostra nunc mollis mattis malesuada adipiscing nibh efficitur. Phasellus sollicitudin semper egestas augue consequat velit fringilla eu. Fermentum accumsan libero potenti etiam lacinia facilisis. Sapien aliquam quam torquent diam pulvinar tempor habitasse leo. Mus rutrum tristique cursus in eu lobortis integer. Iaculis fusce lobortis molestie venenatis vestibulum nullam dictum. Velit condimentum turpis finibus, pulvinar nisl penatibus.
+
+                Taciti quis nullam volutpat odio finibus porttitor, dignissim felis. Mattis tincidunt sit; tempor fames aliquam pretium adipiscing. Eget magnis cursus nec venenatis dolor ad sollicitudin eu. Enim netus non blandit, consequat aliquet nunc hendrerit magna. Ante torquent laoreet etiam velit in. Felis lectus lacus suspendisse eget facilisis elementum orci tempus. Ornare nibh ut posuere elementum eleifend hac vulputate. Ad sapien sapien parturient et lobortis mus litora class facilisis. Conubia posuere bibendum rutrum curabitur conubia in.
+
+                Hendrerit mus class porta tempor montes urna praesent. Gravida dignissim conubia donec sed eros sodales nascetur. Imperdiet est erat habitant vulputate rutrum maecenas aenean tempor vestibulum. Accumsan fusce mus pretium ipsum quis nostra, finibus euismod. Vel porta platea integer mollis ridiculus himenaeos rhoncus. Imperdiet luctus ex tellus vulputate molestie ante diam cursus. Molestie lacinia consequat integer interdum hac vestibulum ullamcorper. Hac senectus cubilia luctus metus auctor platea.
+
+                Feugiat himenaeos duis imperdiet curabitur nam rutrum sagittis phasellus porttitor? Ultricies phasellus sapien commodo posuere auctor integer sapien lobortis. Tristique praesent fringilla potenti facilisis faucibus. Inceptos libero pellentesque id; ex in vulputate. Aptent blandit ullamcorper commodo congue finibus. Et mi nam dui aliquam nullam augue. Gravida conubia ex suscipit tellus primis. Platea pellentesque convallis ridiculus ligula aliquet, convallis semper.
+
+                Purus himenaeos viverra, vestibulum praesent urna conubia eros. Phasellus rhoncus feugiat fames donec, non mus. Ullamcorper magna ornare sociosqu, ultricies facilisi vulputate netus blandit viverra. Imperdiet netus fusce hac pulvinar, tempus vel varius. Facilisis primis mauris fusce sodales ut praesent. Porta mus ac congue dignissim dignissim quisque ut aenean tellus. Mi diam dis primis hendrerit accumsan libero. Natoque eu hendrerit dis lobortis sem mauris ornare vivamus.
+            </p>
+        </div>
+        <div id="biblio">
+            <h2>Bibliografia</h2>
+            <ul>
+                <li><a href="https://ca.wikipedia.org/wiki/Tortuga_careta">Wikipedia</a></li>
+                <li>IUCN Red List</li>
+            </ul>
+        </div>
     </section>
     <footer>
-        <h2>Llicència</h2>
-        <p>Pàgina web creada per Lluc</p>
-        <p>Llicència <a href="#">Creative Commons Reconeixement-NoComercial-CompartirIgual 3.0</a></p>
-        <img src="Imatges/license.png" alt="Llicencia">
-        <h2>Segueix-nos</h2>
-        <ul>
-            <li><a href="#">Mastodon</a></li>
-            <li><a href="#">Diaspora</a></li>
-        </ul>
+        <div>
+            <h2>Llicència</h2>
+            <p>Pàgina web creada per Lluc</p>
+            <p>Llicència <a href="#" class="link2">Creative Commons Reconeixement-NoComercial-CompartirIgual 3.0</a></p>
+            <img src="Imatges/license.png" alt="Llicencia">
+        </div>
+        <div id="segueix">
+            <h2>Segueix-nos</h2>
+            <ul class="punto">
+                <li><a href="#" class="link2">Mastodon</a></li>
+                <li><a href="#" class="link2">Diaspora</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
